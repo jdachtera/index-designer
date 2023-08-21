@@ -139,6 +139,14 @@ const ConfigForm = ({
           {unit}
         </div>
       </div>
+      <button
+        type="button"
+        onClick={() => {
+          window.print();
+        }}
+      >
+        Print
+      </button>
     </form>
   );
 };
