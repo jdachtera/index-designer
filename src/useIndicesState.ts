@@ -7,7 +7,7 @@ export default function useIndicesState() {
   ] = useState({
     width: 148,
     height: 210,
-    indexWidth: 9,
+    indexWidth: 11,
     fontSize: 7.5,
     fontWeight: 800,
     indices: defaultIndices,
