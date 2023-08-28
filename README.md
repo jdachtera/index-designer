@@ -1,4 +1,4 @@
-# Index
+# Index Designer
 
 Little App to support printing your own index divider pages:
 
