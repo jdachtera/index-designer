@@ -5,6 +5,7 @@ import react from "@vitejs/plugin-react";
 import { vanillaExtractPlugin } from "@vanilla-extract/vite-plugin";
 
 export default defineConfig({
+  base: '', // for GitHub Pages
   plugins: [
     react({
       babel: {
