@@ -28,7 +28,7 @@ function App() {
     const handleResize = () => {
       const { offsetHeight: wrapperHeight } = wrapperRef.current!;
       const { offsetHeight: pageHeight } = measureHeightRef.current!;
-      const newZoom = wrapperHeight / pageHeight;
+      const newZoom = (wrapperHeight - 4) / pageHeight;
       setZoom(newZoom);
     };
 

@@ -6,10 +6,10 @@ export const letter = style({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  marginTop: "-0.5px",
-  marginBottom: "-0.5px",
-  paddingTop: "0.5px",
-  paddingBottom: "0.5px",
   borderBottom: "0.5px dotted black",
-  borderTop: "0.5px dotted black",
+  selectors: {
+    "&:first-child": {
+      borderTop: "0.5px dotted black",
+    },
+  },
 });

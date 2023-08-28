@@ -19,8 +19,8 @@ const PrintPages = ({
           key={item}
           className={page}
           style={{
-            width: `calc(${width}${unit} + ${indexWidth}${unit})`,
-            height: `${height}${unit}`,
+            width: `calc(${width}${unit} + ${indexWidth}${unit} + 1px)`,
+            height: `calc(${height}${unit} + 1px)`,
           }}
         >
           <Letter

@@ -21,10 +21,16 @@ const Preview = ({
       className={preview}
       style={{
         ...rest.style,
-        width: `calc(${width}${unit} + ${indexWidth}${unit})`,
-        height: `${height}${unit}`,
+        width: `calc(${width}${unit} + ${indexWidth}${unit} + 1px)`,
+        height: `calc(${height}${unit} + 1px)`,
       }}
     >
+      <VerticalCutLine
+        style={{
+          height: `${height}${unit}`,
+          right: `${indexWidth}${unit}`,
+        }}
+      />
       {indices.map((item, index) => (
         <Letter
           key={item}
@@ -38,12 +44,6 @@ const Preview = ({
           unit={unit}
         />
       ))}
-      <VerticalCutLine
-        style={{
-          height: `${height}${unit}`,
-          right: `${indexWidth}${unit}`,
-        }}
-      />
     </div>
   );
 };
